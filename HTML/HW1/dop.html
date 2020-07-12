@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .colortext {
+        color: red; /* Красный цвет выделения */
+      }
+      .colortext2 {
+        color: blue; /* Синий цвет выделения */
+      }
+    </style>
+</head>
+<body>
+   <div align="center">
+        <h1>Заголовок первого уровня
+        </h1> 
+    </div>
+    <h3><strong>Предварительно форматированный текст:</strong></h3>
+<pre>
+ x | o |  
+‐‐‐‐‐‐‐‐‐‐
+   | х |  
+‐‐‐‐‐‐‐‐‐‐
+ o | x | o
+</pre>
+        <hr>
+        <h3><strong>Тег address</strong></h3>
+        <i>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</i>
+        <hr>
+        <h3><strong>Семантические и функциональные строчные теги</strong></h3>
+        <p>Пожелания автора:
+            <br><s><span class="colortext">Данный текст убрать из монографии</span></s> и заменить его на <strong><span class="colortext2"><u>вновь помещённый текст.</u></span></strong>
+            <hr>
+        <h3><strong>Работа со строчными и блоковыми цитатами</strong></h3>
+        <P>Цитата короткая:
+            <br><i>И всё­таки она вертится!</i>
+        </P>
+<p>
+Цитата занимающая несколько предложений: </p>
+  <p>       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;О сколько нам открытий чудных
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Готовят просвещенья дух
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;И опыт, сын ошибок трудных,
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;И гений, парадоксов друг, 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;И случай, бог изобретатель...
+              </p>
+        <hr>
+        </p>
+        <h3><strong>Семантические и функциональные строчные теги</strong></h3>
+<p><strong>Тэг &ltstrong&gt делает данный фрагмент текста более важным.</strong> <i>Тэг &ltem&gt менее важным.
+  </i> 
+    <br>В то время как теги &ltb&gt и &lti&gt делают текст просто <strong>полужирным</strong> и <i>курсивом</i> соответственно.
+</p>
+<hr>
+<h3><strong>Теги форматирования машинного языка</strong></h3>
+<p>При выполнении программного кода на языке PERL:</p>
+<pre>
+#!/usr/local/bin/perl
+print "Content‐type: text/html\n\n";
+print "&ltH1>Hello World&lt/H1>\n";  
+</pre>
+<p>Программа выведет:</p>
+<pre>Hello, World!</pre>
+<p>Однако в браузере у нас будет отображаться результат выполнения этой программы: </p>
+<P><h1> Hello, World!</h1>
+</P>
+<hr>
+<h3><strong>Комментарии и литералы(мнемоники) в HTML</strong></h3>
+<pre>
+  &lt!‐‐ это комментарий ‐‐>     
+                &lt!‐‐ и это также комментарий, 
+                занимающий более одной строки ‐‐>
+</pre>
+<hr>
+<h3><strong>Теги над­- и подстрочных символов</strong></h3>
+<div align="center"><h3>Магазин работает:</h3>
+  <div align="center">c 08<sup><u>30</u></sup>до 18<sup><u>30</u></div>
+</div>
+<div align="center">обед c 13<sup><u>30</u></sup>до 14<sup><u>00</u></div>
+</div>
+<div align="center">выходной: <u>суббота</u>, <u>воскресенье</u>
+</div>
+<hr>
+<h3><strong>Вот такой текст </strong></h3>
+<p>Э<sub>т</sub>о<sub>п</sub>р<sub>о</sub>с<sub>т</sub>о<sub>в</sub>е<sub>с</sub>ё<sub>л</sub>ы<sub>й</sub>т<sub>е</sub>к<sub>с</sub>т
+  </p>
+<hr>
+<h3><strong>Акроним и курсив</strong></h3>
+<p>ТФ: Y(x)=e­<sup>-iπx</sup>+log<sub>x</sub>4
+</p>
+<hr>
+<h3><strong>Тег small внтури абзаца</strong></h3>
+<p align="right">Создано при помощи блокнота©</p>
+</body>
+</html>
