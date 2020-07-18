@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<span wight=100><h2>Заполните анкету</h2></span>
+    <form id="second" name="111" method="post" action="http://fe.it-academy.by/TestForm.php ">
+
+        <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="familia" maxlength="25" autofocus required pattern="^[А-Яа-яЁё]+$" placeholder="Фамилия"
+        >
+        <span>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)</span>
+        <br>
+        <input type="text" name="imya" maxlength="20"  required pattern="^[А-Яа-яЁё]+$" placeholder="Имя"
+        >
+        <span>text: Только кириллица, без пробелов, длина поля 20, обязательное поле)</span>
+        <br>
+        <input type="text" name="otch" maxlength="24"  required pattern="^[А-Яа-яЁё]+$" placeholder="Отчество"
+        >
+        <span>text: Только кириллица, без пробелов, длина поля 24, обязательное поле)</span>
+        
+        <form id="second" name="111" method="post" action="http://fe.it-academy.by/TestForm.php ">
+
+            <fieldset>
+                <legend>Паспортные данные </legend>
+                
+                <span>text: Серия - только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле </span>
+               
+                <br><span>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле </span>
+
+
+
+
+                    
+                <br><input type="text" size="2" name="number" maxlength="2" minlength="2"  required pattern="[A-z]{2}" placeholder="AA"
+                >
+                <input type="text" size="7" name="series" maxlength="7" minlength="7"  required pattern="[0-9]{7}" placeholder="1234567"
+                >
+            </fieldset>
+            <form id="second" name="111" method="post" action="http://fe.it-academy.by/TestForm.php ">
+
+                <fieldset>
+                    <legend>Дата рождения</legend>
+                    
+                    <input type="text" placeholder="2000" size="4" name="number" maxlength="2" minlength="2"  required pattern="[0-9]{4}" placeholder="AA">
+                    <span>text: Год рождения 4-е цифры</span>
+
+                    
+            <br><select name="list" id="list">
+
+        
+            
+                <option value="1">Январь</option>
+                
+                <option value="2">Февраль</option>
+                
+                <option value="3">Март</option>
+                
+                <option value="4">Апрель</option>
+                
+                <option value="5">Май</option>
+                
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+                
+                
+                
+                </select>
+                <span>select: Месяц рождения</span>
+
+
+
+
+
+                    
+                    <br><input type="text" size="5" name="number" maxlength="31" minlength="1"  required pattern="[0-9]{2}" 
+                    ><span> number: Диапазон от 1 до 31 с шагом 1</span>
+                    
+
+
+
+
+
+
+                </fieldset>
+
+                <select name="list" id="list" required >
+
+        
+            
+                    <option value="1">РБ</option>
+                    
+                    
+                    
+                    
+                    </select>
+                        <span>(Национальность - выбор одного значения из списка, обязательное поле)</span>
+                        <br><span>Адрес:</span>
+                        <br><textarea name="text_area" lang="ru">
+                        </textarea>
+        </form>
+
+
+
+        <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+
+            <fieldset>
+            <legend>Интересы</legend>
+            <label>
+                <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+                    <fieldset>
+                        <legend>array: Хобби</legend>
+                         <input type="checkbox" name="saveonsite"
+                    value="1" id="save?" > Рыбалка
+                    <br><input type="checkbox" name="saveonsite"
+                    value="2" id="save?" > Астрономия
+                    <br><input type="checkbox" name="saveonsite"
+                    value="3" id="save?" > Дайвинг
+                    <br><input type="checkbox" name="saveonsite"
+                     value="4" id="save?" > Марки
+            
+            <br>
+            
+        </fieldset>
+        </form>
+
+
+        <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+            <fieldset>
+                <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+                <span>array: select multiple</span>
+                <br><select name="list[]" size="12" multiple
+                id="list">
+                <optgroup label="Попугаи">
+                <option value="1">Волнистый</option>
+                
+                <option value="2" >Ара</option>
+                
+                <option value="3" >Неразлучник</option>
+            </optgroup>
+
+
+            <optgroup label="Рыба">
+                <option value="1">Караси</option>
+                
+                <option value="2" >Окуни</option>
+                
+                <option value="3" >Осётр</option>
+            </optgroup>
+
+
+
+            <optgroup label="Птицы">
+                <option value="1">Стая ворон</option>
+                
+                <option value="2" >Аист</option>
+                
+                <option value="3" >Археоптерикс</option>
+            </optgroup>
+                
+                </select>
+    
+    <br>
+</fieldset>
+            
+
+</form>
+    
+</fieldset>
+</form>
+
+
+<form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+    <fieldset>
+        <legend>Данные для входа и всстановления пароля:</legend>
+
+        <input type="text" name="login" maxlength="20" minlength="5"  size="20"  required pattern="^[a-zA-Z]+$" placeholder="Логин"
+        >
+        <span>text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле)</span>
+        <br>
+        <input type="text" autocomplete="" name="pass" maxlength="20"  minlength="10" size="20"  required pattern="^[a-zA-Z]+$" placeholder="Пароль"
+        >
+        <span>password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение</span>
+
+
+
+
+
+
+            </fieldset>
+            
+
+        </form>
+
+
+        <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+            <fieldset>
+                <legend>Координаты:</legend>
+        
+                <input type="email" name="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" maxlength="20"   size="20"  required  placeholder="введите адрес почты"
+                >
+                <span>email: проверка должна осуществляться при помощи новых атрибутов тега <span>&lt;input&gt;</span>
+                <br>
+                <input type="text"  name="pass" maxlength="20"   size="20"   placeholder="введите адрес сайта"
+                >
+                <span>url: проверка должна осуществляться при помощи новых атрибутов тега <span>&lt;input&gt;</span>
+        
+        
+        
+        
+        
+        
+                    </fieldset>
+                    
+        
+                </form>
+
+
+
+
+                <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+                    <fieldset>
+                        <legend>Цифры:</legend>
+                
+                        <input type="number" min="-2.5" max="2.5"
+                        step="0.1"><span> number: Диапазон от -2.5 до 2.5 с шагом 0.1</span>
+                         <br>
+
+                        <input type="range" min="1" max="10"><span> range: Максимальное 10 минимальное 1</span>
+                            <br>
+                        
+                        <br>
+                        
+                
+                
+                
+                
+                
+                            </fieldset>
+                            
+                
+                        </form>
+
+
+                        <form id="second" name="Строка поиска" method="post" action="http://fe.it-academy.by/TestForm.php ">
+                            <fieldset>
+                                <legend>Кнопки управления:</legend>
+                        
+                                <input type="submit" value="Отправить">
+                                <input type="reset" value="Сбросить">
+                                
+                                <br>
+                                
+
+                                <br>
+                                <button type='button'>
+                                    
+                                    <img src='email.jpg'>
+                                    
+                                    </button>
+                                    <span>- при нажатии на эту кнопку ничего не происходит</span>
+                        
+                        
+                                    </fieldset>
+                                    
+                        
+                                </form>
+
+        
+            
+          
+
+
+
+
+
+
+
+
+
+
+      
+        </fieldset>
+   
+    </form>
+
+
+    
+</body>
+</html>
